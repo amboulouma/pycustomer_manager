@@ -1,0 +1,175 @@
+2019-10-21 01:56:42,061 - root - INFO - Creating a list of customers
+2019-10-21 01:56:42,061 - root - INFO - Generating a list of no errors cuctomers
+2019-10-21 01:56:42,061 - root - INFO - The list [('Ted', 21, 181, 1010, 'Vienna'), ('Jack', 34, 179, 1050, 'Vienna'), ('Med', 53, 161, 28100, 'Mohammedia'), ('Line', 31, 158, 69100, 'Lyon'), ('Missy', 76, 178, 1070, 'Vienna')] has been created
+2019-10-21 01:56:42,061 - root - INFO - Creating customer (Ted, 21, 181, 1010, Vienna)
+2019-10-21 01:56:42,061 - root - INFO - Customer {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,061 - root - INFO - Creating customer (Jack, 34, 179, 1050, Vienna)
+2019-10-21 01:56:42,061 - root - INFO - Customer {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,061 - root - INFO - Creating customer (Med, 53, 161, 28100, Mohammedia)
+2019-10-21 01:56:42,062 - root - INFO - Customer {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} has been created
+2019-10-21 01:56:42,062 - root - INFO - Creating customer (Line, 31, 158, 69100, Lyon)
+2019-10-21 01:56:42,062 - root - INFO - Customer {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} has been created
+2019-10-21 01:56:42,062 - root - INFO - Creating customer (Missy, 76, 178, 1070, Vienna)
+2019-10-21 01:56:42,062 - root - INFO - Customer {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,062 - root - INFO - Customers [{'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}, {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}, {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}, {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}, {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'}] have been created
+2019-10-21 01:56:42,062 - root - INFO - Testing error customers entries
+2019-10-21 01:56:42,062 - root - INFO - Generating a list of errors cuctomers
+2019-10-21 01:56:42,062 - root - INFO - The list [('Ted1', 'a', 'a', 'a', 'Vienna1'), ('k', -1, -1, -1, 'k'), ('aaaaaaaaaaaaaaaaaaaaaaaaaa', -1, -1, -1, 'aaaaaaaaaaaaaaaaaaaaaaaaaa'), (1, 200, 300, 100001, 1)] has been created
+2019-10-21 01:56:42,062 - root - INFO - Creating customer (test, 0, 100, 0, test)
+2019-10-21 01:56:42,062 - root - INFO - Customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'} has been created
+2019-10-21 01:56:42,062 - root - INFO - Setting the new name (Ted1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,063 - root - ERROR - "Ted1" : name shouldn't contain any digits
+2019-10-21 01:56:42,063 - root - INFO - Setting the new age (a) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,063 - root - ERROR - "a" : age must be an integer
+2019-10-21 01:56:42,063 - root - INFO - Setting the new height (a) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,063 - root - ERROR - "a" : height must be an integer
+2019-10-21 01:56:42,063 - root - INFO - Setting the new zipcode (a) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,063 - root - ERROR - "a" : zipcode must be an integer
+2019-10-21 01:56:42,063 - root - INFO - Setting the new city (Vienna1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,064 - root - ERROR - "Vienna1" : city shouldn't contain any digits
+2019-10-21 01:56:42,064 - root - INFO - Setting the new name (k) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,064 - root - ERROR - "k" : name length should be at least 2 character and at most 25 characters
+2019-10-21 01:56:42,064 - root - INFO - Setting the new age (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,064 - root - ERROR - "-1" : age should be greater or equal to 0 and smaller or equal to 150
+2019-10-21 01:56:42,064 - root - INFO - Setting the new height (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,064 - root - ERROR - "-1" : height should be greater or equal to 20 and smaller or equal to 250
+2019-10-21 01:56:42,064 - root - INFO - Setting the new zipcode (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,065 - root - ERROR - "-1" : zipcode should be greater or equal to 0 and smaller or equal to 100000
+2019-10-21 01:56:42,065 - root - INFO - Setting the new city (k) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,065 - root - ERROR - "k" : city length should contain at least 2 character and at most 25 characters
+2019-10-21 01:56:42,065 - root - INFO - Setting the new name (aaaaaaaaaaaaaaaaaaaaaaaaaa) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,065 - root - ERROR - "aaaaaaaaaaaaaaaaaaaaaaaaaa" : name length should be at least 2 character and at most 25 characters
+2019-10-21 01:56:42,065 - root - INFO - Setting the new age (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,065 - root - ERROR - "-1" : age should be greater or equal to 0 and smaller or equal to 150
+2019-10-21 01:56:42,065 - root - INFO - Setting the new height (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,066 - root - ERROR - "-1" : height should be greater or equal to 20 and smaller or equal to 250
+2019-10-21 01:56:42,066 - root - INFO - Setting the new zipcode (-1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,066 - root - ERROR - "-1" : zipcode should be greater or equal to 0 and smaller or equal to 100000
+2019-10-21 01:56:42,066 - root - INFO - Setting the new city (aaaaaaaaaaaaaaaaaaaaaaaaaa) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,066 - root - ERROR - "aaaaaaaaaaaaaaaaaaaaaaaaaa" : city length should contain at least 2 character and at most 25 characters
+2019-10-21 01:56:42,066 - root - INFO - Setting the new name (1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,067 - root - ERROR - "1" : name must be a string
+2019-10-21 01:56:42,067 - root - INFO - Setting the new age (200) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,067 - root - ERROR - "200" : age should be greater or equal to 0 and smaller or equal to 150
+2019-10-21 01:56:42,067 - root - INFO - Setting the new height (300) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,067 - root - ERROR - "300" : height should be greater or equal to 20 and smaller or equal to 250
+2019-10-21 01:56:42,067 - root - INFO - Setting the new zipcode (100001) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,068 - root - ERROR - "100001" : zipcode should be greater or equal to 0 and smaller or equal to 100000
+2019-10-21 01:56:42,068 - root - INFO - Setting the new city (1) to the customer {'name': 'test', 'age': 0, 'height': 100, 'zipcode': 0, 'city': 'test'}
+2019-10-21 01:56:42,068 - root - ERROR - "1" : city must be a string
+2019-10-21 01:56:42,068 - root - INFO - All error customers entries have been tested
+2019-10-21 01:56:42,068 - root - INFO - Generating a list of no errors cuctomers
+2019-10-21 01:56:42,068 - root - INFO - The list [('Ted', 21, 181, 1010, 'Vienna'), ('Jack', 34, 179, 1050, 'Vienna'), ('Med', 53, 161, 28100, 'Mohammedia'), ('Line', 31, 158, 69100, 'Lyon'), ('Missy', 76, 178, 1070, 'Vienna')] has been created
+2019-10-21 01:56:42,068 - root - INFO - Creating customer (Ted, 21, 181, 1010, Vienna)
+2019-10-21 01:56:42,068 - root - INFO - Customer {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,069 - root - INFO - Creating customer (Jack, 34, 179, 1050, Vienna)
+2019-10-21 01:56:42,069 - root - INFO - Customer {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,069 - root - INFO - Creating customer (Med, 53, 161, 28100, Mohammedia)
+2019-10-21 01:56:42,069 - root - INFO - Customer {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} has been created
+2019-10-21 01:56:42,069 - root - INFO - Creating customer (Line, 31, 158, 69100, Lyon)
+2019-10-21 01:56:42,069 - root - INFO - Customer {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} has been created
+2019-10-21 01:56:42,069 - root - INFO - Creating customer (Missy, 76, 178, 1070, Vienna)
+2019-10-21 01:56:42,069 - root - INFO - Customer {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'} has been created
+2019-10-21 01:56:42,069 - root - INFO - Testing find the oldest customer function
+2019-10-21 01:56:42,070 - root - INFO - Finding oldest customer in [{'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}, {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}, {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}, {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}, {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'}]
+2019-10-21 01:56:42,070 - root - INFO - Oldest customer found is {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'}
+2019-10-21 01:56:42,070 - root - INFO - Testing find the youngest customer function
+2019-10-21 01:56:42,070 - root - INFO - Finding youngest customer in [{'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}, {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}, {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}, {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}, {'name': 'Missy', 'age': 76, 'height': 178, 'zipcode': 1070, 'city': 'Vienna'}]
+2019-10-21 01:56:42,070 - root - INFO - Youngest customer found is {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}
+2019-10-21 01:56:42,070 - root - INFO - Testing the compare customers function
+2019-10-21 01:56:42,070 - root - INFO - Comparing {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} to {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}
+2019-10-21 01:56:42,070 - root - INFO - The customer Ted and the customer Ted have the same name attribute
+2019-10-21 01:56:42,070 - root - INFO - The customer Ted and the customer Ted have the same age attribute
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Ted have the same height attribute
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Ted have the same zipcode attribute
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Ted have the same city attribute
+2019-10-21 01:56:42,071 - root - INFO - Comparing {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} to {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Jack have different name attributes : Ted not equal Jack
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Jack have different age attributes : 21 not equal 34
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Jack have different height attributes : 181 not equal 179
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Jack have different zipcode attributes : 1010 not equal 1050
+2019-10-21 01:56:42,071 - root - INFO - The customer Ted and the customer Jack have the same city attribute
+2019-10-21 01:56:42,071 - root - INFO - Comparing {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} to {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Med have different name attributes : Ted not equal Med
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Med have different age attributes : 21 not equal 53
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Med have different height attributes : 181 not equal 161
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Med have different zipcode attributes : 1010 not equal 28100
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Med have different city attributes : Vienna not equal Mohammedia
+2019-10-21 01:56:42,072 - root - INFO - Comparing {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'} to {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Line have different name attributes : Ted not equal Line
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Line have different age attributes : 21 not equal 31
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Line have different height attributes : 181 not equal 158
+2019-10-21 01:56:42,072 - root - INFO - The customer Ted and the customer Line have different zipcode attributes : 1010 not equal 69100
+2019-10-21 01:56:42,073 - root - INFO - The customer Ted and the customer Line have different city attributes : Vienna not equal Lyon
+2019-10-21 01:56:42,073 - root - INFO - Comparing {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} to {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Ted have different name attributes : Jack not equal Ted
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Ted have different age attributes : 34 not equal 21
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Ted have different height attributes : 179 not equal 181
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Ted have different zipcode attributes : 1050 not equal 1010
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Ted have the same city attribute
+2019-10-21 01:56:42,073 - root - INFO - Comparing {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} to {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Jack have the same name attribute
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Jack have the same age attribute
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Jack have the same height attribute
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Jack have the same zipcode attribute
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Jack have the same city attribute
+2019-10-21 01:56:42,073 - root - INFO - Comparing {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} to {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}
+2019-10-21 01:56:42,073 - root - INFO - The customer Jack and the customer Med have different name attributes : Jack not equal Med
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Med have different age attributes : 34 not equal 53
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Med have different height attributes : 179 not equal 161
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Med have different zipcode attributes : 1050 not equal 28100
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Med have different city attributes : Vienna not equal Mohammedia
+2019-10-21 01:56:42,074 - root - INFO - Comparing {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'} to {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Line have different name attributes : Jack not equal Line
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Line have different age attributes : 34 not equal 31
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Line have different height attributes : 179 not equal 158
+2019-10-21 01:56:42,074 - root - INFO - The customer Jack and the customer Line have different zipcode attributes : 1050 not equal 69100
+2019-10-21 01:56:42,075 - root - INFO - The customer Jack and the customer Line have different city attributes : Vienna not equal Lyon
+2019-10-21 01:56:42,075 - root - INFO - Comparing {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} to {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Ted have different name attributes : Med not equal Ted
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Ted have different age attributes : 53 not equal 21
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Ted have different height attributes : 161 not equal 181
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Ted have different zipcode attributes : 28100 not equal 1010
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Ted have different city attributes : Mohammedia not equal Vienna
+2019-10-21 01:56:42,075 - root - INFO - Comparing {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} to {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Jack have different name attributes : Med not equal Jack
+2019-10-21 01:56:42,075 - root - INFO - The customer Med and the customer Jack have different age attributes : 53 not equal 34
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Jack have different height attributes : 161 not equal 179
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Jack have different zipcode attributes : 28100 not equal 1050
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Jack have different city attributes : Mohammedia not equal Vienna
+2019-10-21 01:56:42,076 - root - INFO - Comparing {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} to {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Med have the same name attribute
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Med have the same age attribute
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Med have the same height attribute
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Med have the same zipcode attribute
+2019-10-21 01:56:42,076 - root - INFO - The customer Med and the customer Med have the same city attribute
+2019-10-21 01:56:42,077 - root - INFO - Comparing {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'} to {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}
+2019-10-21 01:56:42,077 - root - INFO - The customer Med and the customer Line have different name attributes : Med not equal Line
+2019-10-21 01:56:42,077 - root - INFO - The customer Med and the customer Line have different age attributes : 53 not equal 31
+2019-10-21 01:56:42,077 - root - INFO - The customer Med and the customer Line have different height attributes : 161 not equal 158
+2019-10-21 01:56:42,077 - root - INFO - The customer Med and the customer Line have different zipcode attributes : 28100 not equal 69100
+2019-10-21 01:56:42,077 - root - INFO - The customer Med and the customer Line have different city attributes : Mohammedia not equal Lyon
+2019-10-21 01:56:42,077 - root - INFO - Comparing {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} to {'name': 'Ted', 'age': 21, 'height': 181, 'zipcode': 1010, 'city': 'Vienna'}
+2019-10-21 01:56:42,077 - root - INFO - The customer Line and the customer Ted have different name attributes : Line not equal Ted
+2019-10-21 01:56:42,077 - root - INFO - The customer Line and the customer Ted have different age attributes : 31 not equal 21
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Ted have different height attributes : 158 not equal 181
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Ted have different zipcode attributes : 69100 not equal 1010
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Ted have different city attributes : Lyon not equal Vienna
+2019-10-21 01:56:42,078 - root - INFO - Comparing {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} to {'name': 'Jack', 'age': 34, 'height': 179, 'zipcode': 1050, 'city': 'Vienna'}
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Jack have different name attributes : Line not equal Jack
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Jack have different age attributes : 31 not equal 34
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Jack have different height attributes : 158 not equal 179
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Jack have different zipcode attributes : 69100 not equal 1050
+2019-10-21 01:56:42,078 - root - INFO - The customer Line and the customer Jack have different city attributes : Lyon not equal Vienna
+2019-10-21 01:56:42,078 - root - INFO - Comparing {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} to {'name': 'Med', 'age': 53, 'height': 161, 'zipcode': 28100, 'city': 'Mohammedia'}
+2019-10-21 01:56:42,079 - root - INFO - The customer Line and the customer Med have different name attributes : Line not equal Med
+2019-10-21 01:56:42,079 - root - INFO - The customer Line and the customer Med have different age attributes : 31 not equal 53
+2019-10-21 01:56:42,079 - root - INFO - The customer Line and the customer Med have different height attributes : 158 not equal 161
+2019-10-21 01:56:42,079 - root - INFO - The customer Line and the customer Med have different zipcode attributes : 69100 not equal 28100
+2019-10-21 01:56:42,079 - root - INFO - The customer Line and the customer Med have different city attributes : Lyon not equal Mohammedia
+2019-10-21 01:56:42,079 - root - INFO - Comparing {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'} to {'name': 'Line', 'age': 31, 'height': 158, 'zipcode': 69100, 'city': 'Lyon'}
+2019-10-21 01:56:42,080 - root - INFO - The customer Line and the customer Line have the same name attribute
+2019-10-21 01:56:42,080 - root - INFO - The customer Line and the customer Line have the same age attribute
+2019-10-21 01:56:42,080 - root - INFO - The customer Line and the customer Line have the same height attribute
+2019-10-21 01:56:42,080 - root - INFO - The customer Line and the customer Line have the same zipcode attribute
+2019-10-21 01:56:42,080 - root - INFO - The customer Line and the customer Line have the same city attribute
