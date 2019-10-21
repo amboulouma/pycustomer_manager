@@ -1,5 +1,4 @@
 # Customer manager program
-
 import logging
 
 logging.root.setLevel(logging.INFO)
